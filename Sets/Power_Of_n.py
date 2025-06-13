@@ -1,11 +1,12 @@
-def power_of_n(val,power):
-    res=0
-    res=res+val+val
-    if power==0:
-        return 1
-    else:
-        for i in range(power-2):
-            res=res+res
-    return res
-
-print(power_of_n(2,5))
+base=5
+power=4
+initial_val=1
+def sample(intial_val,base):
+    global initial_val
+    temp=0
+    for i in range(base):
+        temp+=intial_val
+    initial_val=temp
+for i in range(power):
+    sample(initial_val,base)
+print(initial_val)
