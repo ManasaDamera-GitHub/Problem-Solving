@@ -50,3 +50,19 @@
         #     print("Palindrome")
         # else:
         #     print("Not a palindrome")
+
+
+# Approach - 6: Using reversed function
+
+s="racecar"
+def palind(s):
+    temp="".join(reversed(s))
+    print(temp)
+    if s==temp:
+        return "true"
+    else:
+        return "false"
+print(palind(s))
+
+
+        
